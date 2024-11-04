@@ -17,17 +17,10 @@ public class Main {
         String nome = scanner.nextLine();
         LocalDate dataAtual = LocalDate.now();
         String hoje = dataAtual.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
+        String hojenovo = hoje.replace("-feira",",");
+        String saudacao= "Salve";
 
-        for(Char letra : hoje.toCharArray()){
-            for(int i = 0; i < hoje.length(); i++){
-
-            }
-        }
-
-        String saudacao= "teste";
-
-        System.out.printf("Ola, %s. Hoje e %s, %s.",nome,hoje,saudacao.toUpperCase());
-
+        System.out.printf("Ola, %s. Hoje é %s %s.",nome,hojenovo,saudacao.toUpperCase());
         //ISO 8601
 
     }
